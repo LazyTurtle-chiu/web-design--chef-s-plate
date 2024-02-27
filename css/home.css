@@ -1,0 +1,45 @@
+/* @import "./utilities.css"; */
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color_white);
+  text-align: center;
+}
+.home-header-main {
+  font-size: 13rem;
+  margin-bottom: -9.5rem;
+}
+.home-header-sub {
+  font-size: 5rem;
+}
+.home-img-content {
+  width: 4rem;
+}
+.home-time {
+  margin: 1rem 0;
+}
+.home-time-sub {
+  font-size: 2rem;
+}
+.home-time-text {
+  margin: 0.5rem 0;
+  font-family: var(--color_body);
+  font-size: 1.2rem;
+}
+.home-reserve-btn {
+  background-color: var(--color_secondary);
+}
+.home-reserve-btn:hover {
+  background-color: var(--color_black);
+}
+.home-reserve-btn-link {
+  color: var(--color_black);
+}
+.home-reserve-btn:hover .home-reserve-btn-link {
+  color: var(--color_secondary);
+}

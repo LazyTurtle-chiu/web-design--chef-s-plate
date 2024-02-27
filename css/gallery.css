@@ -1,0 +1,22 @@
+.gallery {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-nav {
+  display: none;
+}
+.gallery-img {
+  height: 31rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+}
+.gallery-img-content {
+  margin: 0.25rem;
+  height: 15rem;
+}

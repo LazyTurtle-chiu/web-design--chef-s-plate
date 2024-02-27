@@ -1,0 +1,109 @@
+/* @import "./utilities.css"; */
+
+.nav {
+  width: 100vw;
+  height: 6.5rem;
+  /* padding: 0 2rem; */
+  background-color: var(--color_nav);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-brand-link {
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+}
+.nav-brand img {
+  width: auto;
+  height: 5rem;
+}
+.nav-toggler {
+  display: none;
+}
+/* toggler animation */
+.nav-toggler:checked + .nav-toggler-label > span {
+  transform: rotate(135deg);
+}
+.nav-toggler:checked + .nav-toggler-label > span::before,
+.nav-toggler:checked + .nav-toggler-label > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+/* animation end */
+.nav-toggler-label {
+  height: 100%;
+  width: 3rem;
+  position: absolute;
+  top: 0;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+/* hamburger design */
+.nav-toggler-label > span {
+  background-color: var(--color_grey);
+  position: relative;
+  width: 85%;
+  height: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+.nav-toggler-label > span::before,
+.nav-toggler-label > span::after {
+  content: "";
+  position: absolute;
+  top: -0.8rem;
+  z-index: 1;
+  width: 100%;
+  height: 0.2rem;
+  background: inherit;
+}
+.nav-toggler-label > span::after {
+  top: 0.8rem;
+}
+/* end hamburger design */
+.nav-toggler:checked ~ .nav-content {
+  display: flex;
+}
+.nav-content {
+  display: none;
+  height: max-content;
+  padding: 0.5rem 0 1rem;
+  background-color: var(--color_nav);
+}
+.nav-item {
+  width: 100vw;
+  padding: 0.5rem 0;
+}
+.nav-item:hover {
+  color: var(--color_secondary);
+  background-color: var(--color_secondary);
+}
+.nav-item-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.nav-item h3 {
+  color: var(--color_secondary);
+  font-family: var(--font_body);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+.nav-item:hover h3 {
+  color: var(--color_white);
+}
+
+.nav-item-link-active {
+  text-decoration: underline;
+  text-decoration-color: var(--color_white);
+}
+.nav-item-link-active h3 {
+  color: var(--color_white);
+}

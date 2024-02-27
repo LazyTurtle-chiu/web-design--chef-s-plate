@@ -1,0 +1,156 @@
+:root {
+  --font_body: "Open Sans", sans-serif;
+  --font_secondary: "Herr Von Muellerhoff", cursive;
+  --font_button: "Lateef", cursive;
+
+  --color_nav: rgb(0, 0, 0, 0.65);
+  --color_nav_change: #000;
+  --color_white: #f8f8f8;
+  --color_black: #252525;
+  --color_grey: #dfe1e5;
+  --color_secondary: #c59d5f;
+  --color_complimentary: #39619e;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* general css */
+a,
+.btn-text {
+  color: var(--color_secondary);
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+h1 {
+  font: 7.5rem var(--font_secondary);
+  color: var(--color_secondary);
+  margin-bottom: -5.5rem;
+  text-align: center;
+}
+h2 {
+  font: 800 3rem var(--font_body);
+  text-align: center;
+}
+h3 {
+  font: 1.6rem var(--font_button);
+}
+h4 {
+  font-size: 1.4rem;
+}
+p {
+  padding: 1rem 2rem;
+  font: 300 1.2rem var(--font_body);
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+hr {
+  width: 75%;
+  margin: 0.5rem auto;
+  border: none;
+  border-bottom: 0.1rem solid var(--color_grey);
+}
+/* end general css */
+
+/* sections bg*/
+main section {
+  padding-top: 7.5rem;
+  padding-bottom: 5rem;
+  width: 100vw;
+}
+main > section:first-child {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/bg-2.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main > section:nth-child(even) {
+  background-color: white;
+}
+main > section:nth-child(odd) {
+  background-color: var(--color_white);
+}
+/* end sections bg*/
+
+/* dropdown css */
+.title {
+  font: 800 1.8rem var(--font_body);
+  text-transform: uppercase;
+}
+.dropbox-selection {
+  padding: 1rem 2rem;
+  background-color: inherit;
+  border: none;
+  border-bottom: 0.15rem solid var(--color_secondary);
+  font: 300 1.2rem var(--font_body);
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+}
+.dropbox-selection:focus,
+.dropbox-selection:focus-visible {
+  outline: none;
+}
+.selection-text {
+  font: 300 1.2rem var(--font_body);
+}
+/* end dropdown */
+
+/* button */
+button {
+  background-color: var(--color_black);
+  margin: 1rem auto;
+  padding: 1rem;
+  font-family: var(--font_button);
+  font-weight: 100;
+  letter-spacing: 0.4rem;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--color_secondary);
+}
+button:hover .btn-text {
+  color: var(--color_black);
+}
+
+.menu-btn,
+.reservation-btn,
+.gallery-btn,
+.contact-btn {
+  /* margin-top: 3rem; */
+  margin: 3rem auto 0;
+  width: 80%;
+}
+/* end button */
+
+/* icon */
+.fa-2x {
+  font-size: 1.5rem !important;
+}
+/* end icon  */
+
+/* .show-on-scroll {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.show-on-scroll.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* @media screen and (min-width: 768px) {
+  hr {
+    margin: 15px;
+  }
+}
+} */

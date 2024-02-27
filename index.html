@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Lateef&family=Open+Sans:wght@300;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/resetCss.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/reservation.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/media_queries.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/9cd45a4148.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="nav">
+        <!-- logo -->
+        <div class="nav-brand">
+          <a class="nav-brand-link" href="#home">
+            <img src="img/logo.png" alt="" />
+          </a>
+        </div>
+        <!-- nav hamburger/checkbox -->
+        <input type="checkbox" id="nav-toggler" class="nav-toggler" />
+        <!-- burger -->
+        <label for="nav-toggler" class="nav-toggler-label">
+          <span> </span>
+        </label>
+        <!-- navigation -->
+        <div class="nav-content">
+          <ul class="nav-link">
+            <li class="nav-item">
+              <a href="#header" class="nav-item-link">
+                <h3>home</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-item-link">
+                <h3>about</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#menu" class="nav-item-link">
+                <h3>menu</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#reservation" class="nav-item-link">
+                <h3>reservation</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-item-link">
+                <h3>gallery</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-item-link">
+                <h3>contact</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- home content -->
+      <section id="home" class="home">
+        <!-- header -->
+        <div class="home-header">
+          <h1 class="home-header-main">Welcome</h1>
+          <h2 class="home-header-sub">Chef Plate</h2>
+        </div>
+        <!-- image -->
+        <div class="home-img">
+          <img class="home-img-content" src="img/fork and knife.png" alt="" />
+        </div>
+        <!-- opening hour -->
+        <div class="home-time">
+          <h2 class="home-time-sub">OPENING HOURS</h2>
+          <h3 class="home-time-text">MONDAY - FIRDAY: 11:00 - 23:00</h3>
+          <h3 class="home-time-text">SATURDAY - SUNDAY: 18:00 - 23:00</h3>
+        </div>
+        <!-- reserve button -->
+        <div class="home-reserve">
+          <button class="home-reserve-btn">
+            <a class="home-reserve-btn-link" href="#reservation">
+              <h3 class="home-reserve-btn-text">reserve here</h3>
+            </a>
+          </button>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section id="about" class="about show-on-scroll">
+        <div class="about-img">
+          <img class="about-img-content" src="img/about-2.jpg" alt="" />
+          <img class="about-img-content" src="img/about-3.jpg" alt="" />
+          <img class="about-img-content" src="img/about-4.jpg" alt="" />
+          <img class="about-img-content" src="img/about-5.jpg" alt="" />
+        </div>
+        <!-- info -->
+        <div class="about-info">
+          <!-- header -->
+          <h1 class="header-main">Discover</h1>
+          <h2 class="header-sub">Chef Plate</h2>
+          <hr />
+          <!-- body -->
+          <div class="about-body">
+            <p class="body-text">
+              Chic, charming and effortlessly convivial, Chef Plate is a
+              contemporary ode to heritage flavours. Helmed by Piedmont-born
+              chef Francesco Gava, the ristorante and bar delivers impeccable,
+              beloved classics with a modern twist, using the finest produce
+              from the origin. From signature hand-made pastas to hearty
+              favourites, the menu is a celebration of seasons and provenance.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- menu -->
+      <section id="menu" class="menu show-on-scroll">
+        <div class="menu-info">
+          <h1 class="header-main">Modern</h1>
+          <h2 class="header-sub">Menu</h2>
+          <div class="menu-info-body">
+            <p class="body-text">
+              For those with pure food indulgence in mind, come and sate your
+              desires with our ever changing internationally and seasonally
+              inspired plates. We love food, lots of different food, just like
+              you.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-dropbox">
+          <div class="menu-dropbox-header">
+            <h3 class="title">Select:</h3>
+          </div>
+          <select id="menu-selection" class="dropbox-selection">
+            <option class="selection-text" value="one" selected>
+              Appetizer
+            </option>
+            <option class="selection-text" value="two">Pasta / Risotto</option>
+            <option class="selection-text" value="three">Mains</option>
+            <option class="selection-text" value="four">Desserts</option>
+          </select>
+        </div>
+        <!-- appetizer -->
+        <div id="appetizer" class="one menu-data">
+          <div class="row">
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">Minestrone</h3>
+                <h3 class="choices-info-text">
+                  Traditional Vegetable Soup, Chifferi Pasta, 36 Months Aged
+                  Parmigiano Cheese
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;128</h3>
+              </div>
+            </div>
+
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">Il Vitello Tonnato</h3>
+                <h3 class="choices-info-text">
+                  Veal Tenderloin, Tuna Sauce, Modena Aged Balsamic, Pantelleria
+                  Capers
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;230</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">
+                  Insalata di Spinaci Novelli, Pecorino e Noci
+                </h3>
+                <h3 class="choices-info-text">
+                  Baby Spinach Leaf, Quail Egg, Roast Walnut, Red Radish,
+                  Pecorino Romano, Honey & White Balsamic Vinegar Dressing
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;158</h3>
+              </div>
+            </div>
+
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">La Burrata Pugliese (V)</h3>
+                <h3 class="choices-info-text">
+                  Apulian Burrata, Vesuvian Tomato Datterino, Basil Leaf, Extra
+                  Virgin Olive Oil
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;218</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="show-more">
+            <div class="row">
+              <div class="choices-info">
+                <div class="choices-info-body">
+                  <h3 class="choices-info-title">
+                    Impepata di Cozze al Vino Bianco
+                  </h3>
+                  <h3 class="choices-info-text">
+                    Italian Black Mussels, Parsley & Garlic, Ground Black Pepper
+                  </h3>
+                </div>
+                <div class="choices-info-price">
+                  <h3 class="choices-info-price-text">&#36;188</h3>
+                </div>
+              </div>
+
+              <div class="choices-info">
+                <div class="choices-info-body">
+                  <h3 class="choices-info-title">Il Carpaccio di Manzo</h3>
+                  <h3 class="choices-info-text">
+                    Wagyu Beef, Hari Sauce, Castelmagno, Arugula
+                  </h3>
+                </div>
+                <div class="choices-info-price">
+                  <h3 class="choices-info-price-text">&#36;228</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="choices-info">
+                <div class="choices-info-body">
+                  <h3 class="choices-info-title">
+                    Scampi al Forno Olio e Limone
+                  </h3>
+                  <h3 class="choices-info-text">
+                    Baked Scampi, Amalfi Lemon, Olive Oil
+                  </h3>
+                </div>
+                <div class="choices-info-price">
+                  <h3 class="choices-info-price-text">&#36;188</h3>
+                </div>
+              </div>
+
+              <div class="choices-info">
+                <div class="choices-info-body">
+                  <h3 class="choices-info-title">Il Carpaccio di Ricciola</h3>
+                  <h3 class="choices-info-text">
+                    Amberjack Carpaccio, Braised Tropea Red Onion & Wild Fennel
+                    Leaf
+                  </h3>
+                </div>
+                <div class="choices-info-price">
+                  <h3 class="choices-info-price-text">&#36;208</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="menu-btn more-button">
+            <h3 class="btn-text">Show More</h3>
+          </button>
+          <button class="menu-btn less-button">
+            <h3 class="btn-text">Show Less</h3>
+          </button>
+        </div>
+        <!-- pasta -->
+        <div id="pasta" class="two menu-data">
+          <div class="row">
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">
+                  La Carbonara ai Ricci di Mare
+                </h3>
+                <h3 class="choices-info-text">
+                  Linguine Pasta, Sea Urchin & Organic Egg, Wild Fennel Leaf
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;328</h3>
+              </div>
+            </div>
+
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">Lasagna Portofino (V)</h3>
+                <h3 class="choices-info-text">
+                  Pesto Genovese, Baby Spinach & Datterini, Mozzarella Fior di
+                  Latte, Gorgonzola & Mascarpone, Green Pea, Roast Pine Nuts
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;268</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">
+                  I Tonnarelli Cacio e Pepe (V)
+                </h3>
+                <h3 class="choices-info-text">
+                  Handcrafted Tonnarelli Pasta, Creamy Pecorino Romano, Ground
+                  Black Pepper
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;228</h3>
+              </div>
+            </div>
+
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">
+                  Gli Spaghettini alle Vongole Veraci e Bottarga
+                </h3>
+                <h3 class="choices-info-text">
+                  Spaghettini, Mediterranean Clams, Shaved Bottarga
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;318</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="show-more">
+            <div class="row">
+              <div class="choices-info">
+                <div class="choices-info-body">
+                  <h3 class="choices-info-title">
+                    Risotto ai Funghi Porcini e Parmigiano Reggiano (V)
+                  </h3>
+                  <h3 class="choices-info-text">
+                    Acquerello Carnaroli Rice, Porcini Mushroom, 36 Months Aged
+                    Parmigiano Cheese
+                  </h3>
+                </div>
+                <div class="choices-info-price">
+                  <h3 class="choices-info-price-text">&#36;218</h3>
+                </div>
+              </div>
+
+              <div class="choices-info">
+                <div class="choices-info-body">
+                  <h3 class="choices-info-title">
+                    Pennette al Ragu di Peperone Calabrese e ‘Nduja
+                  </h3>
+                  <h3 class="choices-info-text">
+                    Penne Pasta, Burnt Bell Pepper Ragout, ‘Nduja Spicy Pork
+                    Sauce, Dry Ricotta Cheese
+                  </h3>
+                </div>
+                <div class="choices-info-price">
+                  <h3 class="choices-info-price-text">&#36;238</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="menu-btn more-button">
+            <h3 class="btn-text">Show More</h3>
+          </button>
+          <button class="menu-btn less-button">
+            <h3 class="btn-text">Show Less</h3>
+          </button>
+        </div>
+        <!-- main -->
+        <div id="main" class="three menu-data">
+          <div class="row">
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">
+                  La Tagliata di Manzo Americano
+                </h3>
+                <h3 class="choices-info-text">
+                  Prime U.S. Beef Ribeye Steak, Wild Rocket Leaf & Vesuvian
+                  Datterino Tomato, Aged Modena Balsamic Vinegar
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;408</h3>
+              </div>
+            </div>
+
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">
+                  La Cotoletta alla Milanese “Orecchia di Elefante”
+                </h3>
+                <h3 class="choices-info-text">
+                  Breaded & Pan-Fried Milk-Fed Veal Cutlet on the Bone
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;508</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">
+                  Il Filetto di Branzino all'Acqua Pazza
+                </h3>
+                <h3 class="choices-info-text">
+                  Chilean Sea Bass Fillet, Black Mussels & Veraci Clam Broth
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;338</h3>
+              </div>
+            </div>
+
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">
+                  Orata di Orbetello in Crosta di Sale
+                </h3>
+                <h3 class="choices-info-text">
+                  Mediterranean Sea Bream in Salt Crust, Amalfi Lemon & Rosemary
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-pric-text">&#36;528</h3>
+              </div>
+            </div>
+          </div>
+          <!-- <span id="points">...</span> -->
+          <div class="show-more">
+            <div class="row">
+              <div class="choices-info">
+                <div class="choices-info-body">
+                  <h3 class="choices-info-title">
+                    La Parmigiana di Melanzane (V)
+                  </h3>
+                  <h3 class="choices-info-text">
+                    Baked Eggplant, Tomato Passata, Mozzarella, Provolone, Basil
+                  </h3>
+                </div>
+                <div class="choices-info-price">
+                  <h3 class="choices-info-price-text">&#36;268</h3>
+                </div>
+              </div>
+
+              <div class="choices-info">
+                <div class="choices-info-body">
+                  <h3 class="choices-info-title">
+                    Il Polletto Ruspante alla Romana
+                  </h3>
+                  <h3 class="choices-info-text">
+                    Braised Spring Chicken, Peperonata, Mentuccia
+                  </h3>
+                </div>
+                <div class="choices-info-price">
+                  <h3 class="choices-info-price-text">&#36;298</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="menu-btn more-button">
+            <h3 class="btn-text">Show More</h3>
+          </button>
+          <button class="menu-btn less-button">
+            <h3 class="btn-text">Show Less</h3>
+          </button>
+        </div>
+        <!-- dessert -->
+        <div id="dessert" class="four menu-data">
+          <div class="row">
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">Il Tiramisù Tradizionale</h3>
+                <h3 class="choices-info-text">Our Signature Tiramisu</h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;118</h3>
+              </div>
+            </div>
+
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">Bonet</h3>
+                <h3 class="choices-info-text">
+                  Chocolate & Amaretti Caramel Bar
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;108</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">
+                  Gelato al Mascarpone e Amarene Fabbri
+                </h3>
+                <h3 class="choices-info-text">
+                  Homemade Mascarpone Gelato, Marinated Cherries
+                </h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;88</h3>
+              </div>
+            </div>
+
+            <div class="choices-info">
+              <div class="choices-info-body">
+                <h3 class="choices-info-title">Torta Caprese Bianca</h3>
+                <h3 class="choices-info-text">Lemon Cake, White Chocolate</h3>
+              </div>
+              <div class="choices-info-price">
+                <h3 class="choices-info-price-text">&#36;118</h3>
+              </div>
+            </div>
+          </div>
+          <!-- <span id="points">...</span> -->
+          <div class="show-more">
+            <div class="row">
+              <div class="choices-info">
+                <div class="choices-info-body">
+                  <h3 class="choices-info-title">
+                    La Panna Cotta alle Fragole
+                  </h3>
+                  <h3 class="choices-info-text">
+                    Strawberry Panna Cotta, Meringue
+                  </h3>
+                </div>
+                <div class="choices-info-price">
+                  <h3 class="choices-info-price-text">&#36;98</h3>
+                </div>
+              </div>
+
+              <div class="choices-info">
+                <div class="choices-info-body">
+                  <h3 class="choices-info-title">Affogato al Caffe</h3>
+                  <h3 class="choices-info-text">
+                    Vanilla Gelato, Espresso, Dark Chocolate
+                  </h3>
+                </div>
+                <div class="choices-info-price">
+                  <h3 class="choices-info-price-text">&#36;88</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="menu-btn more-button">
+            <h3 class="btn-text">Show More</h3>
+          </button>
+          <button class="menu-btn less-button">
+            <h3 class="btn-text">Show Less</h3>
+          </button>
+        </div>
+      </section>
+
+      <!-- reservation -->
+      <section id="reservation" class="reservation show-on-scroll">
+        <div class="reservation-img">
+          <img class="reservation-img-content" src="img/reserve-3.jpg" alt="" />
+        </div>
+        <div class="reservation-info">
+          <h1 class="header-main">Make a</h1>
+          <h2 class="header-sub">Reservation</h2>
+
+          <form class="reservation-form" action="" method="post">
+            <div class="reservation-form-row">
+              <i class="fas fa-envelope fa-2x" for="email"></i>
+              <input
+                class="reservation-form-input"
+                type="email"
+                placeholder="Email:"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+            <div class="reservation-form-row">
+              <i class="fas fa-user fa-2x"></i>
+              <input
+                class="reservation-form-input"
+                type="text"
+                placeholder="Full Name:"
+                name="name"
+                id="name"
+                required
+              />
+            </div>
+            <div class="reservation-form-row">
+              <i class="fas fa-calendar-alt fa-2x"></i>
+              <select
+                class="dropbox-selection reservation-date"
+                name="Date"
+                id="date"
+                required
+              >
+                <option class="selection-text" value="0" disabled selected>
+                  Choose a date:
+                </option>
+                <option class="selection-text" value="monday">
+                  <h4>Monday</h4>
+                </option>
+                <option class="selection-text" value="tuesday">
+                  <h4>Tuesday</h4>
+                </option>
+                <option class="selection-text" value="wednesday">
+                  <h4>Wednesday</h4>
+                </option>
+                <option class="selection-text" value="thursday">
+                  <h4>Thursday</h4>
+                </option>
+                <option class="selection-text" value="friday">
+                  <h4>Friday</h4>
+                </option>
+                <option class="selection-text" value="saturday">
+                  <h4>Saturday</h4>
+                </option>
+                <option class="selection-text" value="sunday">
+                  <h4>Sunday</h4>
+                </option>
+              </select>
+            </div>
+            <div class="reservation-form-row">
+              <i class="fas fa-clock fa-2x"></i>
+              <select
+                class="dropbox-selection reservation-time-1"
+                name="Time"
+                id="weekday"
+              >
+                <option class="selection-text" value="0" disabled selected>
+                  Choose a time
+                </option>
+                <option class="selection-text" value="1100">11:00</option>
+                <option class="selection-text" value="1130">11:30</option>
+                <option class="selection-text" value="1200">12:00</option>
+                <option class="selection-text" value="1230">12:30</option>
+                <option class="selection-text" value="1300">13:00</option>
+                <option class="selection-text" value="1330">13:30</option>
+                <option class="selection-text" value="1400">14:00</option>
+                <option class="selection-text" value="1430">14:30</option>
+                <option class="selection-text" value="1500">15:00</option>
+                <option class="selection-text" value="1530">15:30</option>
+                <option class="selection-text" value="1600">16:00</option>
+                <option class="selection-text" value="1630">16:30</option>
+                <option class="selection-text" value="1700">17:00</option>
+                <option class="selection-text" value="1730">17:30</option>
+                <option class="selection-text" value="1800">18:00</option>
+                <option class="selection-text" value="1830">18:30</option>
+                <option class="selection-text" value="1900">19:00</option>
+                <option class="selection-text" value="1930">19:30</option>
+                <option class="selection-text" value="2000">20:00</option>
+                <option class="selection-text" value="2030">20:30</option>
+                <option class="selection-text" value="2100">21:00</option>
+                <option class="selection-text" value="2130">21:30</option>
+                <option class="selection-text" value="2200">22:00</option>
+                <option class="selection-text" value="2230">22:30</option>
+                <option class="selection-text" value="2300">23:00</option>
+              </select>
+              <select
+                class="dropbox-selection reservation-time-2"
+                name="Time"
+                id="weekend"
+              >
+                <option class="selection-text" value="0" disabled selected>
+                  Choose a time
+                </option>
+                <option class="selection-text" value="1800">18:00</option>
+                <option class="selection-text" value="1830">18:30</option>
+                <option class="selection-text" value="1900">19:00</option>
+                <option class="selection-text" value="1930">19:30</option>
+                <option class="selection-text" value="2000">20:00</option>
+                <option class="selection-text" value="2030">20:30</option>
+                <option class="selection-text" value="2100">21:00</option>
+                <option class="selection-text" value="2130">21:30</option>
+                <option class="selection-text" value="2200">22:00</option>
+                <option class="selection-text" value="2230">22:30</option>
+                <option class="selection-text" value="2300">23:00</option>
+              </select>
+            </div>
+            <div class="reservation-form-row">
+              <i class="fas fa-users fa-2x"></i>
+              <select
+                class="dropbox-selection reservation-pax"
+                name="Pax"
+                id="pax"
+                required
+              >
+                <option class="selection-text" value="" disabled selected>
+                  Choose seats:
+                </option>
+                <option class="selection-text" value="1">1</option>
+                <option class="selection-text" value="2">2</option>
+                <option class="selection-text" value="3">3</option>
+                <option class="selection-text" value="4">4</option>
+                <option class="selection-text" value="5">5</option>
+                <option class="selection-text" value="6">6</option>
+                <option class="selection-text" value="7">7</option>
+                <option class="selection-text" value="8">8</option>
+              </select>
+            </div>
+
+            <button class="button reservation-btn">
+              <a href="index.html"><h3 class="btn-text">Book Table</h3></a>
+            </button>
+          </form>
+        </div>
+        <div class="reservation-img">
+          <img class="reservation-img-content" src="img/reserve-2.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- gallery -->
+      <section id="gallery" class="gallery">
+        <h1>Food</h1>
+        <h2>Gallery</h2>
+        <div class="gallery-nav">
+          <ul>
+            <li class="list" data-filter="all">
+              <h3 class="gallery-nav-text">All</h3>
+            </li>
+            <li class="list" data-filter="app">
+              <h3 class="gallery-nav-text">Appetizer</h3>
+            </li>
+            <li class="list" data-filter="pasta">
+              <h3 class="gallery-nav-text">Pasta / Risotto</h3>
+            </li>
+            <li class="list" data-filter="main">
+              <h3 class="gallery-nav-text">Main</h3>
+            </li>
+            <li class="list" data-filter="dessert">
+              <h3 class="gallery-nav-text">Dessert</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="gallery-img" id="gallery">
+          <div class="itemBox app">
+            <img class="gallery-img-content" src="gallery/app-1.jpg" alt="" />
+          </div>
+          <div class="itemBox pasta">
+            <img class="gallery-img-content" src="gallery/pasta-1.jpg" alt="" />
+          </div>
+          <div class="itemBox main">
+            <img class="gallery-img-content" src="gallery/main-1.jpg" alt="" />
+          </div>
+          <div class="itemBox dessert">
+            <img
+              class="gallery-img-content"
+              src="gallery/dessert-1.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="itemBox app">
+            <img class="gallery-img-content" src="gallery/app-2.jpg" alt="" />
+          </div>
+          <div class="itemBox pasta">
+            <img class="gallery-img-content" src="gallery/pasta-2.jpg" alt="" />
+          </div>
+          <div class="itemBox main">
+            <img class="gallery-img-content" src="gallery/main-2.jpg" alt="" />
+          </div>
+          <div class="itemBox dessert">
+            <img
+              class="gallery-img-content"
+              src="gallery/dessert-2.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="itemBox app">
+            <img class="gallery-img-content" src="gallery/app-3.jpg" alt="" />
+          </div>
+          <div class="itemBox pasta">
+            <img class="gallery-img-content" src="gallery/pasta-3.jpg" alt="" />
+          </div>
+          <div class="itemBox main">
+            <img class="gallery-img-content" src="gallery/main-3.jpg" alt="" />
+          </div>
+          <div class="itemBox dessert">
+            <img
+              class="gallery-img-content"
+              src="gallery/dessert-3.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="itemBox app">
+            <img class="gallery-img-content" src="gallery/app-4.jpg" alt="" />
+          </div>
+          <div class="itemBox pasta">
+            <img class="gallery-img-content" src="gallery/pasta-4.jpg" alt="" />
+          </div>
+          <div class="itemBox main">
+            <img class="gallery-img-content" src="gallery/main-4.jpg" alt="" />
+          </div>
+          <div class="itemBox dessert">
+            <img
+              class="gallery-img-content"
+              src="gallery/dessert-4.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="itemBox app">
+            <img class="gallery-img-content" src="gallery/app-5.jpg" alt="" />
+          </div>
+          <div class="itemBox pasta">
+            <img class="gallery-img-content" src="gallery/pasta-5.jpg" alt="" />
+          </div>
+          <div class="itemBox main">
+            <img class="gallery-img-content" src="gallery/main-5.jpg" alt="" />
+          </div>
+          <div class="itemBox dessert">
+            <img
+              class="gallery-img-content"
+              src="gallery/dessert-5.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="itemBox app">
+            <img class="gallery-img-content" src="gallery/app-6.jpg" alt="" />
+          </div>
+          <div class="itemBox pasta">
+            <img class="gallery-img-content" src="gallery/pasta-6.jpg" alt="" />
+          </div>
+          <div class="itemBox main">
+            <img class="gallery-img-content" src="gallery/main-6.jpg" alt="" />
+          </div>
+          <div class="itemBox dessert">
+            <img
+              class="gallery-img-content"
+              src="gallery/dessert-6.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="itemBox app">
+            <img class="gallery-img-content" src="gallery/app-7.jpg" alt="" />
+          </div>
+          <div class="itemBox pasta">
+            <img class="gallery-img-content" src="gallery/pasta-7.jpg" alt="" />
+          </div>
+          <div class="itemBox main">
+            <img class="gallery-img-content" src="gallery/main-7.jpg" alt="" />
+          </div>
+          <div class="itemBox dessert">
+            <img
+              class="gallery-img-content"
+              src="gallery/dessert-7.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="itemBox app">
+            <img class="gallery-img-content" src="gallery/app-8.jpg" alt="" />
+          </div>
+          <div class="itemBox pasta">
+            <img class="gallery-img-content" src="gallery/pasta-8.jpg" alt="" />
+          </div>
+          <div class="itemBox main">
+            <img class="gallery-img-content" src="gallery/main-8.jpg" alt="" />
+          </div>
+          <div class="itemBox dessert">
+            <img
+              class="gallery-img-content"
+              src="gallery/dessert-8.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <button class="button gallery-btn">
+          <h3 class="btn-text">Show More</h3>
+        </button>
+      </section>
+
+      <!-- contact -->
+      <section id="contact" class="contact show_on_scroll">
+        <div class="contact-info">
+          <h1>Find us</h1>
+          <h2>Contact</h2>
+          <hr />
+          <p class="body-text">
+            If you have questions or comments, please get a hold of us in
+            whichever way is most convenient. Ask away. There is no reasonable
+            question that our team can not answer
+          </p>
+        </div>
+
+        <form class="contact-form" action="" method="post">
+          <div class="contact-form-row">
+            <i class="fas fa-user fa-2x"></i>
+            <input
+              class="contact-form-input"
+              type="text"
+              placeholder="Full Name:"
+              name="name"
+              id="contact_name"
+              required
+            />
+          </div>
+          <div class="contact-form-row">
+            <i class="fas fa-envelope fa-2x"></i>
+            <input
+              class="contact-form-input"
+              type="email"
+              placeholder="Email:"
+              name="email"
+              id="contact_email"
+              required
+            />
+          </div>
+          <div class="contact-form-row form_msg">
+            <i class="fas fa-file-alt fa-2x"></i>
+            <textarea
+              class="contact-form-textarea"
+              placeholder="Message:"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="button contact-btn">
+            <h3 class="btn-text">Send</h3>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <section id="footer" class="footer">
+        <div class="footer-brand">
+          <img class="footer-brand-content" src="img/logo.png" alt="" />
+        </div>
+        <div class="footer-img">
+          <img class="footer-img-content" src="img/fork and knife.png" alt="" />
+        </div>
+        <div class="footer-location">
+          <h3>22 Royal Street, Sundance Avenue, New York</h3>
+          <h3><span>RESERVATIONS NUMBER:</span> +00 25 854 78521</h3>
+        </div>
+        <div class="footer-time">
+          <h3><span>OPENING HOURS</span></h3>
+          <h3>MONDAY - FIRDAY: 11:00 - 23:00</h3>
+          <h3>WEEKEND: 18:00 - 23:00</h3>
+        </div>
+        <div class="footer-copyright">
+          <h4 class="footer-copyright-text">
+            © Chef Plate 2021. All rights reserved.
+          </h4>
+        </div>
+      </section>
+    </footer>
+    <!-- custom js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

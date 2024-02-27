@@ -1,0 +1,56 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu-info-body .body-text {
+  width: 80%;
+  margin: 1rem auto;
+  border-top: 0.1rem solid var(--color_secondary);
+  border-bottom: 0.1rem solid var(--color_secondary);
+}
+.menu-dropbox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.menu-dropbox-header {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+.menu-data {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#pasta,
+#main,
+#dessert,
+.show-more,
+.less-button {
+  display: none;
+}
+.choices-info {
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed var(--color_secondary);
+}
+.choices-info-body {
+  width: 85%;
+}
+.choices-info-title {
+  font-family: var(--font_body);
+  font-weight: 400;
+}
+.choices-info-price {
+  margin: auto;
+}
+.choices-info-text,
+.choices-info-price-text {
+  font-family: var(--font_body);
+  font-weight: 300;
+}
